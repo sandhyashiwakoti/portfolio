@@ -1,0 +1,77 @@
+.contact {
+  background: var(--bg2);
+  border-top: 1px solid var(--border);
+}
+
+.contact-inner {
+  max-width: 640px;
+}
+
+.contact-desc {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  line-height: 1.75;
+  margin-bottom: 48px;
+  font-weight: 300;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 24px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  transition: border-color 0.2s, transform 0.15s, background 0.2s;
+}
+.contact-link:hover {
+  border-color: var(--blue-border);
+  transform: translateX(4px);
+  background: var(--bg3);
+}
+
+.contact-link-icon {
+  width: 40px; height: 40px;
+  background: var(--blue-glow);
+  border: 1px solid var(--blue-border);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blue);
+  flex-shrink: 0;
+}
+
+.contact-link-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-dim);
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.contact-link-value {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.contact-arrow {
+  margin-left: auto;
+  color: var(--text-dim);
+  font-size: 1.1rem;
+  transition: color 0.2s, transform 0.2s;
+}
+.contact-link:hover .contact-arrow {
+  color: var(--blue);
+  transform: translateX(3px);
+}
+
+.email-link { border-color: var(--blue-border); }
